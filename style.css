@@ -145,6 +145,10 @@ input {
 
 /*header*/
 
+.header__section {
+    border-bottom: 1px solid #DCDEDD;
+}
+
 .logo-link {
     display: block;
     width: 6rem;
@@ -155,7 +159,6 @@ input {
 .header__container {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #DCDEDD;
 }
 
 .header__container, .nav__list, .socials__list {
@@ -279,6 +282,50 @@ button.slick-next.slick-arrow:hover, button.slick-prev.slick-arrow:hover {
     margin: 0 auto 1rem;
 }
 
+/*project*/
+
+.projects__list {
+    display: drid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.projects__link {
+    display: block;
+    background: transparent center / cover no-repeat;
+}
+
+.projects__link--1 {
+    background-image: url(./images/project-1-img.jpg);
+}
+
+.projects__link--2 {
+    background-image: url(./images/project-2-img.jpg);
+}
+
+.projects__link--3 {
+    background-image: url(./images/project-3-img.jpg);
+}
+
+.projects__link--4 {
+    background-image: url(./images/project-4-img.jpg);
+}
+
+/*about*/
+
+.about__container {
+    display: flex;
+    max-width: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about__content {
+
+}
+
 @media (max-width: 1200px) {
 
     .footer__links-wrapper {
@@ -361,5 +408,14 @@ button.slick-next.slick-arrow:hover, button.slick-prev.slick-arrow:hover {
 
     .nav__list--show {
         display: block;
+    }
+
+    .nav__link:hover::after,
+    .nav__link:focus::after,
+    .footer__link--email:hover::after,
+    .footer__link--email:focus::after, 
+    .footer__link--tel:hover::after,
+    .footer__link--tel:focus::after {
+        opacity: 0;
     }
 }
