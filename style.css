@@ -344,6 +344,79 @@ button.slick-next.slick-arrow:hover, button.slick-prev.slick-arrow:hover {
     font-size: 1rem;
 }
 
+/*services*/
+
+.services__container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.services__offers-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__offer-item {
+    max-width: 18rem;
+    text-align: center;
+    box-shadow: 0px 0px 26px rgba(126, 147, 158, 0.33);
+}
+
+.services__offer-heading {
+    background-color: #E6EDEF;
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem 1rem;
+}
+
+.services__offer-heading--start {
+    font-family: 'Gilroy-Light', sans-serif;
+    margin: 0 0 .5rem 0;
+}
+
+.services__offer-heading--end {
+    font-family: 'Gilroy-Extrabold', sans-serif;
+    margin: 0;
+}
+
+.services__offer-description {
+    padding: 1rem;
+}
+
+.services__offer-params {
+    font-family: 'Montserrat-Light', sans-serif;
+    font-size: .9rem;
+    margin: 0;
+    border-bottom: 2px solid #E6EDEF;
+}
+
+.services__offers-conditions-list {
+    position: relative;
+    border-bottom: 2px solid #E6EDEF;
+}
+
+.services__offers-conditions-item {
+    padding-left: 2rem;
+    text-align: left;
+    font-family: 'Montserrat-Light', sans-serif;
+    font-size: .8rem;
+}
+
+.services__offers-conditions-item::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    left: .4rem;
+    background: transparent url(./images/check.svg) center / contain no-repeat;
+}
+
+.services__offers-conditions-rule {
+    font-size: .8rem;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+
+
 @media (max-width: 1200px) {
 
     .footer__links-wrapper {
