@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
     <link rel="stylesheet" href="./style.css" type="text/css" media="all">
     <title>ValuevaAnastasia</title>
 </head>
@@ -17,6 +19,7 @@
                 <li class="nav__item"><a href="" class="nav__link">Услуги</a></li>
                 <li class="nav__item"><a href="" class="nav__link">О дизайнере</a></li>
                 <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                <li class="button-close"></li>
             </ul>
             <ul class="socials__list">
                 <li class="socials__item">
@@ -70,19 +73,23 @@
                     </a>
                 </li>
             </ul>
+            <button class="burger-menu"></button>
         </div>
     </header>
     <main>
-        <div class="container">
-
+        <div class="swiper">
+            <div class="swiper-slide swiper-slide--1"></div>
+            <div class="swiper-slide swiper-slide--2"></div>
+            <div class="swiper-slide swiper-slide--3"></div>
+            <div class="swiper-slide swiper-slide--4"></div>
         </div>
     </main>
     <footer class="footer__section">
         <div class="container">
             <a href="/" class="logo-link footer__logo-link"></a>
-            <div class="">
-                <a href="" class=""></a>
-                <a href="" class=""></a>
+            <div class="footer__links-wrapper">
+                <a href="mailto:vanastasya@mail.ru" class="footer__link--email">vanastasya@mail.ru</a>
+                <a href="tel:+79055241044" class="footer__link--tel">+7 905 524 10 44</a>
                 <ul class="socials__list">
                     <li class="socials__item">
                         <a href="" class="socials__link socials__link--1">
@@ -135,10 +142,19 @@
                         </a>
                     </li>
                 </ul>
-                <button>Заказать проект</button>
+                <button class="primary-button">Заказать проект</button>
             </div>
         </div>
     </footer>
-    
+    <script src="./burger.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.swiper').slick({
+            centerMode: false,
+          });
+        });
+    </script>
 </body>
 </html>
