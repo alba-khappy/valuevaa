@@ -371,7 +371,7 @@ button.slick-next.slick-arrow:hover, button.slick-prev.slick-arrow:hover {
 }
 
 .about__content {
-    font-family: 'Montserrat-Light', sans-serif;
+    font-family: 'Gilroy-Light', sans-serif;
     font-size: .7rem;
 }
 
@@ -491,11 +491,11 @@ button.slick-next.slick-arrow:hover, button.slick-prev.slick-arrow:hover {
 }
 
 .services__stages-item:nth-child(odd) {
-    padding-left: 4rem;
+    padding-left: 5rem;
 }
 
 .services__stages-item:nth-child(even) {
-    padding-left: 7rem;
+    padding-left: 7.5rem;
 }
 
 .services__stage-description::before {
